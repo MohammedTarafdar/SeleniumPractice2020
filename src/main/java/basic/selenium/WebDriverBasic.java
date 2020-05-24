@@ -42,7 +42,7 @@ public class WebDriverBasic {
 		driver.close();
 		
 		// how to quit browser
-		driver.quit();
+		//driver.quit();
 		
 		
 		
