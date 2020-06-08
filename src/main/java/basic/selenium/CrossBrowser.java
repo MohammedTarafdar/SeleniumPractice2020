@@ -16,10 +16,21 @@ public class CrossBrowser {
 
 		CrossBrowser obj = new CrossBrowser();
 		WebDriver driver = obj.initDriver("chrome");
-		driver.get("http://www.google.com");
+		//driver.get("http://www.google.com");
+		obj.launchURL("http://www.google.com");
+		String title =obj.getPageTitle();
+		System.out.println(title);
+		if(title.equals("Google")) {
+			System.out.println("expected title");
+		}
+		else {
+			System.out.println("incorrect title");
+		}
+		
+		obj.quitBrowser();
 		
 
-	}
+	} 
 	
 	
 	public WebDriver initDriver(String browser) {
@@ -43,11 +54,27 @@ public class CrossBrowser {
 		
 		
 		return driver;
-		
-		
-		
-		
-		
+			
 	}
 
+	
+	public void launchURL(String url) {
+		driver.get(url);
+	}
+	
+	
+	public String getPageTitle() {
+		return driver.getTitle();
+	}
+	
+	
+	public void closeBrowser() {
+		driver.close();
+	}
+	
+	public void quitBrowser() {
+		driver.quit();
+	}
+	
+	
 }
