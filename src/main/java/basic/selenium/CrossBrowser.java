@@ -17,6 +17,7 @@ public class CrossBrowser {
 		CrossBrowser obj = new CrossBrowser();
 		WebDriver driver = obj.initDriver("chrome");
 		//driver.get("http://www.google.com");
+		
 		obj.launchURL("http://www.google.com");
 		String title =obj.getPageTitle();
 		System.out.println(title);

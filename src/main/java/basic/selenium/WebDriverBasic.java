@@ -13,17 +13,22 @@ public class WebDriverBasic {
 		//System.setProperty("webdriver.chrome.driver", "/Users/ashik/Downloads/chromedriver_83");
 		
 		WebDriverManager.chromedriver().setup();
+		
+		
 		WebDriver driver = new ChromeDriver();		// Launch the Chrome driver
+		
+		
 		driver.manage().window().fullscreen(); 		// to make your screen full		// better
 		// driver.manage().window().maximize(); 		// to maximize your window
 		driver.manage().deleteAllCookies(); 		// to delete all cookies
 		
 		driver.get("http://www.google.com");	// enter url 
+	
 		
 		String title = driver.getTitle();	// get the title
 		System.out.println("Page title is : "+ title);
 		
-		// verification or checkpoint
+		/*// verification or checkpoint
 		if(title.equals("Google")) {
 			System.out.println("expected title");
 		}
@@ -42,7 +47,8 @@ public class WebDriverBasic {
 		driver.close();
 		
 		// how to quit browser
-		//driver.quit();
+		//driver.quit();*/
+		
 		
 		
 		
