@@ -16,7 +16,7 @@ public class WebElementCommands {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https:www.facebook.com");
 		
-		/*WebElement element = driver.findElement(By.xpath("//*[@id=\"email\"]"));
+		WebElement element = driver.findElement(By.xpath("//*[@id=\"email\"]"));
 		element.sendKeys("hi");
 		
 		try {
@@ -53,7 +53,7 @@ public class WebElementCommands {
 		boolean status = element1.isDisplayed();
 		System.out.println(status);
 		
-		*/
+		
 		// 5. isEnabled() command
 		
 		WebElement element2 = driver.findElement(By.name("lastname"));
