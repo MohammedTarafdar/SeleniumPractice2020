@@ -1,7 +1,6 @@
 package webDriver.commands;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -34,9 +33,9 @@ public class LocatorsConcept {
 		
 		driver.navigate().to("https://www.facebook.com/");
 		
-		//driver.navigate().to("https://www.walgreens.com/");
+		//driver.navigate().to("https://www.javatpoint.com/");
 		
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		
 		
 		// 1. ID
@@ -98,6 +97,8 @@ public class LocatorsConcept {
 		
 		
 		// Using multiple attribute  =>//tagname[@attribute='Value' and @attribute='Value']
+		 
+		// Using multiple attribute  =>//tagname[@attribute='Value' or @attribute='Value']
 		
 		WebElement element7 =driver.findElement(By.xpath("//input[@name=\"lastname\" and @id=\"u_0_o\"]"));
 		element7.sendKeys("Vision");
@@ -109,13 +110,28 @@ public class LocatorsConcept {
 		
 					
 		
+		/*
+		// ********* for https://www.javatpoint.com/
 		
 		// 7.2 XPATH functions
-
+		
+		// I. text() function
+		
+		// //div[@id="link"]/div/ul/li[3]
+		// (//*[text()="Java"])[1]
+		
+		driver.findElement(By.xpath("//div[@id=\"link\"]/div/ul/li[3]")).click();
+		Thread.sleep(2000);
+		
+		driver.navigate().back();
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("(//*[text()=\"Java\"])[1]")).click();
+		Thread.sleep(2000);
+		*/
 		
 		
 		
-		// 8. CSS Selector
 		
 		
 		
