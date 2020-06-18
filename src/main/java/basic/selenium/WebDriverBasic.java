@@ -10,12 +10,12 @@ public class WebDriverBasic {
 	public static void main(String[] args) {
 		
 
-		//System.setProperty("webdriver.chrome.driver", "/Users/ashik/Downloads/chromedriver_83");
+		System.setProperty("webdriver.chrome.driver", "/Users/ashik/Downloads/chromedriver_83");
 		
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 		
 		
-		WebDriver driver = new ChromeDriver();		// Launch the Chrome driver
+		WebDriver driver = new ChromeDriver();		
 		
 		
 		driver.manage().window().fullscreen(); 		// to make your screen full		// better
@@ -48,6 +48,9 @@ public class WebDriverBasic {
 		
 		// how to quit browser
 		//driver.quit();*/
+		
+		
+		
 		
 		
 		

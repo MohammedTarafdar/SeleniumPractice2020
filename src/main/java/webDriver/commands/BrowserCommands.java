@@ -14,6 +14,7 @@ public class BrowserCommands {
 	
 	
 	public static void main(String[] args) {
+		
 	
 	
 		WebDriverManager.chromedriver().setup();
